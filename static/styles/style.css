@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #222;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search input[type="text"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    min-width: 200px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.search button i {
+    font-size: 1.2rem;
+}
+
+.login {
+    display: flex;
+    gap: 1rem;
+}
+
+.login > div {
+    background-color: #444;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+.content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-height: 300px;
+}
+
+.content h1, .content h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content form {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content form input[type="file"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.content button {
+    padding: 0.5rem 1rem;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+    background-color: #1976D2;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+form[action^="/tracks/delete/"] {
+    margin-top: 0.5rem;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
